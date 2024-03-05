@@ -1,0 +1,19 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:import/react",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "babel"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
