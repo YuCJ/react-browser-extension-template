@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
@@ -6,10 +5,14 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 const config = {
-  entry: ['./src'],
+  entry: {
+    background: './src/background.js',
+    content: './src/content.js',
+    options: './src/options',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name]-[contenthash].js',
+    filename: '[name].js',
     publicPath: 'dist',
   },
   module: {
@@ -37,10 +40,6 @@ const config = {
   plugins: [
     isDevelopment && new ReactRefreshWebpackPlugin(),
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      minify: false,
-      template: path.join(__dirname, 'src/template.html'),
-    }),
   ].filter(Boolean),
 };
 

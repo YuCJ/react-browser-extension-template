@@ -7,12 +7,8 @@ module.exports = {
     ...baseConfig.output,
     publicPath: '',
   },
-  devServer: {
-    hot: true,
-    watchContentBase: false,
-    host: '0.0.0.0',
-    port: 8080,
-    publicPath: '',
+  watchOptions: {
+    ignored: /node_modules/,
   },
   devtool: 'eval-source-map',
   plugins: [...baseConfig.plugins, new webpack.HotModuleReplacementPlugin()],
