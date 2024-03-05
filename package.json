@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=development webpack serve --config ./webpack.config.dev.js --mode=development",
-    "build": "NODE_ENV=production webpack --config ./webpack.config.base.js --mode=production && mv -f ./dist/index.html ./index.html",
-    "build:commit": "npm run build && git add dist index.html && git commit -m \"chore: update dist\"",
+    "build": "NODE_ENV=production webpack --config ./webpack.config.base.js --mode=production",
+    "build:dist-commit": "npm run build && git add dist && git commit -m \"chore: update dist\"",
     "release": "standard-version && git push --follow-tags origin master",
     "lint": "eslint ./src/**/*.js && stylelint ./src/**/*.js"
   },
