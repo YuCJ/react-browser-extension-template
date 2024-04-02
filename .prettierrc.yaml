@@ -1,0 +1,4 @@
+# https://github.com/prettier/prettier-vscode/issues/3114
+
+trailingComma: 'es5'
+singleQuote: true
