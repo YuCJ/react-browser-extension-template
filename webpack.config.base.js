@@ -9,6 +9,7 @@ const config = {
     background: './src/background.js',
     content: './src/content.js',
     options: './src/options',
+    popup: './src/popup',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
