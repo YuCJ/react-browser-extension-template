@@ -1,12 +1,12 @@
 # React Static Site Template
 
-This is a React + styled-components static site template.
+This is a React + styled-components Chrome/Edge browser extension template.
 
-- [x] Webpack & Dev Server with hot-reload
+- [x] Manifest 3
+- [x] Webpack 5
 - [x] Prettier + ESLint (with StandardJS) + StyleLint
 - [x] CommitLint + Standard Version
-
-👉 [DEMO](https://yucj.github.io/react-static-site-template/)
+- [x] Pnpm
 
 ## Dev
 
