@@ -1,4 +1,4 @@
-# React Static Site Template
+# React Browser Extension Template
 
 This is a React + styled-components Chrome/Edge browser extension template.
 
